@@ -1,0 +1,215 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.06897065724841728 -0.9879840119300062 -0.13831355902228407 2.103003858690588
+  position -1.005766406949548 0.04588134609287653 -0.40570861279279324
+}
+SolidBox {
+  translation 0 -0.352042 0.241527
+  rotation 1 0 0 -2.8797953071795863
+  size 0.2 0.2 0.2
+}
+SolidPipe {
+  translation 0 -0.26 0
+  height 0.05
+  radius 0.165
+  thickness 1e-05
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.28 -0.37
+  floorSize 5 5
+}
+TinkerbotsBase {
+  hidden position_6_0 6.195339917010514e-07
+  hidden translation_8 1.2390679834020222e-08 0 3.858025010572419e-15
+  hidden rotation_8 0 -1 0 6.194296387084308e-07
+  hidden position_16_0 1.451179390082312e-07
+  hidden translation_18 2.902358780164612e-09 0 2.2898349882893854e-16
+  hidden rotation_18 0 -1 0 1.4600096599955432e-07
+  hidden position_24_0 1.1117763697472424e-07
+  hidden translation_26 2.2235527394944798e-09 0 1.2836953722228372e-16
+  hidden rotation_26 0 -1 0 1.1151007970493858e-07
+  hidden position_40_0 -4.858983235190822e-07
+  hidden translation_42 -9.717966470381257e-09 0 2.3696322681843185e-15
+  hidden rotation_42 0 1 0 4.860611686199943e-07
+  translation -0.000254137681758219 -0.2540198864474046 -0.00156116445168882
+  rotation 3.433334515780725e-06 0.9999999999940491 3.376986612388215e-07 -0.7850800327531647
+  name "RotationPad"
+  controller "RotationPad"
+  upSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          leftSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "lavy_motor"
+            backSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+        rightSlot TinkerbotsLightSensor {
+          name "LightSensor"
+        }
+      }
+      rightSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "horny_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "pravy_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+        leftSlot TinkerbotsCube {
+        }
+      }
+      leftSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+        rightSlot TinkerbotsCube {
+        }
+      }
+      rightSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "spodny_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+        leftSlot TinkerbotsCube {
+        }
+      }
+      leftSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+      }
+    }
+  }
+  leftSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+  }
+  rightSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+  }
+}
+TinkerbotsBase {
+  hidden position_3_0 382.8490872963363
+  hidden translation_11 -0.008250359175635363 0 0.0017810106352462544
+  hidden rotation_11 0 -0.9999999999999999 0 5.85796886556109
+  hidden position_15_0 382.84907589185343
+  hidden translation_17 -0.008250566953250545 0 0.001781104727510762
+  hidden rotation_17 0 -1 0 5.857957461078243
+  hidden position_23_0 -382.81583148753134
+  hidden translation_25 0.008851572911657222 0 0.0020654061381469857
+  hidden rotation_25 0 1 0 5.824713056756153
+  hidden position_29_0 -382.84909825772604
+  hidden translation_31 0.008250159469696237 0 0.0017809202009381707
+  hidden rotation_31 0 1 0 5.857979826950852
+  translation -0.00364965 -0.054064 0.52149
+  rotation 4.5889312381761597e-07 -0.9999998507760847 -0.0005463035765896308 -3.1415322868971827
+  controller "Auto"
+  upSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "lp_motor"
+        leftSlot TinkerbotsCube {
+          frontSlot TinkerbotsCube {
+            upSlot TinkerbotsCube {
+            }
+            frontSlot TinkerbotsDistanceSensor {
+              rotation 0 0 1 1.5707996938995747
+              name "AutoSensor"
+            }
+          }
+        }
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pp_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pz_motor"
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5708003061004252
+        name "lz_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+}
