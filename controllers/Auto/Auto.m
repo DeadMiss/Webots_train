@@ -13,8 +13,9 @@
 TIME_STEP = 64;
 
 % get and enable devices, e.g.:
-%  camera = wb_robot_get_device('camera');
-%  wb_camera_enable(camera, TIME_STEP);
+
+
+
 lp_motor = wb_robot_get_device('lp_motor');
 wb_motor_set_position(lp_motor, inf);
 wb_motor_set_velocity(lp_motor, 1);
@@ -30,6 +31,19 @@ wb_motor_set_velocity(lz_motor, -1);
 pz_motor = wb_robot_get_device('pz_motor');
 wb_motor_set_position(pz_motor, inf);
 wb_motor_set_velocity(pz_motor, -1);
+
+DistanceSensor = wb_robot_get_device('AutoSensor');
+wb_distance_sensor_enable(DistanceSensor, TIME_STEP);
+dst = wb_distance_sensor_get_value(DistanceSensor)
+
+if dst <= 1
+wb_motor_set_velocity(lp_motor, 0);
+wb_motor_set_velocity(pp_motor, 0);
+wb_motor_set_velocity(lz_motor, 0);
+wb_motor_set_velocity(pz_motor, 0);
+end
+
+
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds

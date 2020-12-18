@@ -16,6 +16,32 @@ TIME_STEP = 64;
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
 horny_motor = wb_robot_get_device('horny_motor');
+<<<<<<< Updated upstream
+=======
+wb_motor_set_position(dolny_motor, inf);
+wb_motor_set_velocity(dolny_motor, 0);
+
+dolny_motor = wb_robot_get_device('dolny_motor');
+wb_motor_set_position(spodny_motor, inf);
+wb_motor_set_velocity(spodny_motor, 0);
+
+lavy_motor = wb_robot_get_device('lavy_motor');
+wb_motor_set_position(lavy_motor, inf);
+wb_motor_set_velocity(lavy_motor, 0);
+
+pravy_motor = wb_robot_get_device('pravy_motor');
+wb_motor_set_position(pravy_motor, inf);
+wb_motor_set_velocity(pravy_motor, 0);
+
+
+Sensor = wb_robot_get_device('LightSensor');
+if Sensor == 0;
+  wb_motor_set_velocity(dolny_motor, 1);
+  wb_motor_set_velocity(dolny_motor, 1);
+  wb_motor_set_velocity(lavy_motor, 1);
+  wb_motor_set_velocity(pravy_motor, 1);
+end
+>>>>>>> Stashed changes
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
