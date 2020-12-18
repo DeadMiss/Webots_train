@@ -33,18 +33,16 @@ wb_motor_set_position(pravy_motor, inf);
 wb_motor_set_velocity(pravy_motor, -2);
 
 
-Sensor = wb_robot_get_device('LightSensor');
-wb_light_sensor_enable(Sensor, 64);
-light = wb_light_sensor_get_value(Sensor);
-light = -1;
+%Sensor = wb_robot_get_device('LightSensor');
+%wb_light_sensor_enable(Sensor, 64);
+%light = wb_light_sensor_get_value(Sensor);
 
-
-if light <= 5;
-  wb_motor_set_velocity(spodny_motor, 1);
-  wb_motor_set_velocity(horny_motor, 1);
-  wb_motor_set_velocity(lavy_motor, 1);
-  wb_motor_set_velocity(pravy_motor, 1);
-end
+%if light <= 5;
+ % wb_motor_set_velocity(spodny_motor, 1);
+  %wb_motor_set_velocity(horny_motor, 1);
+  %wb_motor_set_velocity(lavy_motor, 1);
+  %wb_motor_set_velocity(pravy_motor, 1);
+%end
 
 
 % main loop:
