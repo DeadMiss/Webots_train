@@ -3,12 +3,83 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.7 0.7 0.2 0.75
-  position 1.2 1.6 2.3
-
+  orientation 0.06175044908113276 0.9741362570403551 0.21736014988420824 3.998202613874477
+  position -0.9613059418870569 0.06807880764180639 0.10325066392076876
 }
-Background {
-  skyColor [
-    0.4 0.7 1
-  ]
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.28 -0.37
+  floorSize 5 5
+}
+TinkerbotsBase {
+  hidden linearVelocity_0 -0.018582297396724956 -3.908591987140756e-06 -0.018529886165854634
+  hidden angularVelocity_0 1.790219115771595e-05 -6.617298173780766e-05 8.697412064493019e-05
+  hidden position_3_0 29.050855051182708
+  hidden translation_5 -0.014016040408246394 0 0.03426711643165515
+  hidden rotation_5 0 -1 0 3.9181138224643624
+  hidden linearVelocity_5 -0.0185849164811334 -6.817522136253428e-06 -0.01853995891947912
+  hidden angularVelocity_5 -0.7062312762533283 -2.5000265689154337e-05 0.7080505059295336
+  hidden position_9_0 29.050853655495544
+  hidden translation_11 -0.014016020495801472 0 0.034267135993648945
+  hidden rotation_11 0 -1 0 3.9181124267771983
+  hidden linearVelocity_11 -0.018579380121661746 1.9226752085637306e-06 -0.018534560430683515
+  hidden angularVelocity_11 -0.7062309576817466 -2.5113583267388216e-05 0.7080502274279667
+  hidden position_16_0 -5.821437184603262
+  hidden translation_18 0.008910276748612967 0 0.0020944989385070015
+  hidden rotation_18 0 1 0 5.821437184603262
+  hidden position_20_0 -5.821439912540487
+  hidden translation_22 0.008910227903496926 0 0.002094474631897991
+  hidden rotation_22 0 1 0 5.821439912540487
+  hidden linearVelocity_22 -0.018586584233181734 2.031840832098682e-06 -0.018526596098166762
+  hidden angularVelocity_22 -0.7061654047118245 -3.240221711635357e-05 0.7081155528177002
+  translation -0.5831876015674491 -0.25386259626718516 0.3942316707264013
+  rotation -8.342362490006831e-06 -0.9999999994683468 3.152318510837443e-05 2.354983553748595
+  controller "Auto"
+  upSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "lp_motor"
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pp_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pz_motor"
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5708003061004252
+        name "lz_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
 }
