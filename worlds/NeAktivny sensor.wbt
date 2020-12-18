@@ -1,0 +1,224 @@
+#VRML_SIM R2020b utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.6436654498986437 0.6305854186269206 0.4336551837830233 1.67424707082482
+  position 0.7718901079475529 1.1574840480312671 0.23140520520299782
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 -0.28 -0.37
+  floorSize 5 5
+}
+TinkerbotsBase {
+  hidden linearVelocity_0 -4.05228702804461e-08 3.9933063897971505e-07 -8.823476278846759e-06
+  hidden angularVelocity_0 -0.00033756206827316936 -1.4396249542724822e-08 1.8095350086739366e-06
+  hidden position_6_0 6.194470793980519e-07
+  hidden translation_8 1.2388941587960235e-08 0 3.847616669716558e-15
+  hidden rotation_8 0 -1 0 6.194296387084308e-07
+  hidden linearVelocity_8 -7.334064737572682e-08 3.342656586640359e-05 -8.826501708881969e-06
+  hidden angularVelocity_8 -0.0003361076930629005 -1.477269901763612e-08 3.238043349222322e-06
+  hidden position_16_0 1.4507201599829955e-07
+  hidden translation_18 2.9014403199659798e-09 0 2.220446049250313e-16
+  hidden rotation_18 0 -1 0 1.4600096599955432e-07
+  hidden linearVelocity_18 -1.9297531717325132e-08 3.3063637633907505e-05 -8.82097041919968e-06
+  hidden angularVelocity_18 -0.00033601458496987076 -1.3848317410074045e-08 2.878049617890168e-07
+  hidden position_24_0 1.1112201749118606e-07
+  hidden translation_26 2.2224403498237164e-09 0 1.214306433183765e-16
+  hidden rotation_26 0 -1 0 1.1151007970493858e-07
+  hidden linearVelocity_26 -7.41021222358675e-08 -3.2535444822781155e-05 -8.814289063964458e-06
+  hidden angularVelocity_26 -0.0003358648452740007 -1.314375422422181e-08 3.471355277580922e-06
+  hidden position_40_0 -2.036904232880446e-07
+  hidden translation_42 -4.0738084657608636e-09 0 4.163336342344337e-16
+  hidden rotation_42 0 1 0 2.043144285798385e-07
+  hidden linearVelocity_42 -1.510589991762936e-08 -3.222377614062043e-05 -8.819843083280334e-06
+  hidden angularVelocity_42 -0.0003359627807788922 -1.50341650418719e-08 2.3510856920455733e-07
+  translation -0.0002674096442131521 -0.2541610143545162 -0.001577761006123445
+  rotation 0.0001630032396952335 0.9999999622750798 -0.00022108772551444395 -0.785115104881853
+  name "RotationPad"
+  controller "RotationPad"
+  upSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          leftSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "lavy_motor"
+            backSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+        rightSlot TinkerbotsLightSensor {
+          name "LightSensor"
+        }
+      }
+      rightSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "horny_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "pravy_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+        leftSlot TinkerbotsCube {
+        }
+      }
+      leftSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+        rightSlot TinkerbotsCube {
+        }
+      }
+      rightSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+          rightSlot TinkerbotsMotor {
+            rotation 0 0 1 -1.5707996938995747
+            name "spodny_motor"
+            frontSlot TinkerbotsAxle {
+              endSlot TinkerbotsWheel {
+              }
+            }
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      upSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+        leftSlot TinkerbotsCube {
+        }
+      }
+      leftSlot TinkerbotsCube {
+        upSlot TinkerbotsCube {
+        }
+      }
+    }
+  }
+  leftSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+  }
+  rightSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+  }
+}
+TinkerbotsBase {
+  hidden linearVelocity_0 -0.00040737345325297946 1.1516438018108427e-05 -0.026297287469244986
+  hidden angularVelocity_0 -0.0009932276560350596 4.104594788081675e-06 -0.001097496582518676
+  hidden position_3_0 7.261378517874682
+  hidden translation_11 0.016589791861712923 0 0.00882955658959576
+  hidden rotation_11 0 0.9999999999999999 0 5.30499209648449
+  hidden linearVelocity_11 -0.0004145472995010385 8.555486895824049e-06 -0.02628531394192803
+  hidden angularVelocity_11 -1.0008507563267552 -0.00045452776381971476 0.015765576258412056
+  hidden position_15_0 7.261378633941761
+  hidden translation_17 0.01658979315823356 0 0.008829558515124502
+  hidden rotation_17 0 1 0 5.304991980417412
+  hidden linearVelocity_17 -0.00041442992195308117 -0.00012279510495669628 -0.026286722720711073
+  hidden angularVelocity_17 -1.0008505946234052 -0.0004545767215611043 0.015765681532358147
+  hidden position_23_0 -7.228114779904031
+  hidden translation_25 -0.01620911241845331 0 0.00828399920596015
+  hidden rotation_25 0 -1 0 5.338255834455142
+  hidden linearVelocity_25 -0.000415080155738383 3.833615039241546e-05 -0.026296253710676388
+  hidden angularVelocity_25 -1.0008495518351022 -0.00046130924412765036 0.015858133750965273
+  hidden position_29_0 -7.261380138913751
+  hidden translation_31 -0.016589809969416322 0 0.008829583482311163
+  hidden rotation_31 0 -0.9999999999999999 0 5.304990475445423
+  hidden linearVelocity_31 -0.000414757463520372 0.00017632125812074912 -0.02629398128634255
+  hidden angularVelocity_31 -1.0008496741175537 -0.00046181290678376394 0.015858239457098643
+  translation -0.008809456945973168 -0.2079854361301552 -0.008791417570291938
+  rotation 0.00022366942852190434 -0.9999999684467804 0.00011436094139993784 3.1247300315302184
+  controller "Auto"
+  upSlot TinkerbotsCube {
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "lp_motor"
+        leftSlot TinkerbotsCube {
+          frontSlot TinkerbotsCube {
+            upSlot TinkerbotsCube {
+            }
+            frontSlot TinkerbotsDistanceSensor {
+              rotation 0 0 1 1.5707996938995747
+              name "AutoSensor"
+            }
+          }
+        }
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pp_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+  downSlot TinkerbotsCube {
+    upSlot TinkerbotsCube {
+    }
+    leftSlot TinkerbotsCube {
+      rightSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5707996938995747
+        name "pz_motor"
+        backSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+    rightSlot TinkerbotsCube {
+      leftSlot TinkerbotsMotor {
+        rotation 0 0 1 1.5708003061004252
+        name "lz_motor"
+        frontSlot TinkerbotsAxle {
+          endSlot TinkerbotsWheel {
+          }
+        }
+      }
+    }
+  }
+}

@@ -15,9 +15,8 @@ TIME_STEP = 64;
 % get and enable devices, e.g.:
 %  camera = wb_robot_get_device('camera');
 %  wb_camera_enable(camera, TIME_STEP);
+
 horny_motor = wb_robot_get_device('horny_motor');
-<<<<<<< Updated upstream
-=======
 wb_motor_set_position(dolny_motor, inf);
 wb_motor_set_velocity(dolny_motor, 0);
 
@@ -35,13 +34,14 @@ wb_motor_set_velocity(pravy_motor, 0);
 
 
 Sensor = wb_robot_get_device('LightSensor');
-if Sensor == 0;
+light = wb_light_sensor_enable(Sensor, 64);
+
+if light == 0;
   wb_motor_set_velocity(dolny_motor, 1);
   wb_motor_set_velocity(dolny_motor, 1);
   wb_motor_set_velocity(lavy_motor, 1);
   wb_motor_set_velocity(pravy_motor, 1);
 end
->>>>>>> Stashed changes
 
 % main loop:
 % perform simulation steps of TIME_STEP milliseconds
